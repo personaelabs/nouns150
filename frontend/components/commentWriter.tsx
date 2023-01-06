@@ -209,7 +209,7 @@ const CommentWriter: React.FC<CommentWriterProps> = ({ propId }) => {
           toast.success("Proof submitted successfully!", {
             position: "bottom-right",
           });
-          refetch();
+          await refetch();
           // TODO: post to IPFS or store in our db
           setSuccessProofGen(true);
           // TODO: add toast showing success
